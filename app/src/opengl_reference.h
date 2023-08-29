@@ -4,6 +4,8 @@
 #include "GL/glcorearb.h"
 #include "IndexBuffer.h"
 #include "Object.h"
+#include "PlyObject.h"
+#include "PlyPointCloud.h"
 #include "Renderer.h"
 #include "Shader.h"
 #include "Texture.h"
@@ -29,6 +31,9 @@ GLFWwindow *init_GL(std::string window_name);
 void setUniforms_PhongGouraud(Shader *use_shader, Object &giselle,
                               glm::mat4 Model, glm::mat4 View,
                               glm::mat4 Projection, Light light);
+void setUniforms_PhongGouraud(Shader *use_shader, glm::mat4 Model,
+                              glm::mat4 View, glm::mat4 Projection,
+                              Light light);
 
 // GUI Functions
 void updateGUI(Controls &controls);

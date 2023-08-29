@@ -1,1 +1,192 @@
-/home/freitas/cmp143/cmp143/cmake_build_Debug/compile_commands.json
+[
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_demo.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_draw.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui_impl_glfw.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_tables.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui_stdlib.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_stdlib.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_stdlib.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_widgets.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/imgui.dir/imgui/imgui_impl_opengl3.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/stb_image.dir/stb_image/stb_image.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image/stb_image.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image/stb_image.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include  -D_LINUX -g -o CMakeFiles/mylib.dir/src/util.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/util.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/util.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/main.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/main.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/main.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/cc  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -o CMakeFiles/CMP143.dir/lib/gl3w.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/gl3w.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/gl3w.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/util.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/util.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/util.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/IndexBuffer.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/IndexBuffer.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/IndexBuffer.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/Renderer.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Renderer.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Renderer.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/Shader.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Shader.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Shader.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/Texture.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Texture.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Texture.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/VertexArray.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/VertexArray.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/VertexArray.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/VertexBuffer.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/VertexBuffer.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/VertexBuffer.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/Object.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Object.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/Object.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/PlyObject.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/PlyObject.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/PlyObject.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/close2gl.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/close2gl.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/close2gl.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/opengl_reference.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/opengl_reference.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/opengl_reference.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/close2gl_math.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/close2gl_math.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/close2gl_math.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build",
+  "command": "/usr/bin/c++  -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -isystem /usr/lib  -D_LINUX -g -o CMakeFiles/CMP143.dir/src/FullImageBuffer.cpp.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/FullImageBuffer.cpp",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src/FullImageBuffer.cpp"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/context.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/context.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/context.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/init.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/init.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/init.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/input.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/input.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/input.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/monitor.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/monitor.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/window.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/window.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/window.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/x11_init.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/x11_init.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/x11_monitor.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/x11_window.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/x11_window.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/xkb_unicode.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/linux_joystick.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/posix_time.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/posix_time.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/posix_tls.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/posix_tls.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/posix_tls.c"
+},
+{
+  "directory": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/happly -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/imgui -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/stb_image -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/include -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src -I/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/build/lib/glfw/src -fPIC   -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/glx_context.c",
+  "file": "/home/freitas/cmp143/pcloud_oclusion/point_cloud_occlusion/app/lib/glfw/src/glx_context.c"
+}
+]

@@ -25,6 +25,22 @@ void Renderer::Draw(const Object &object, const Shader &shader,
   glDrawArrays(type, 0, object.VB->getCount());
 }
 
+void Renderer::Draw(const PlyObject &object, const Shader &shader,
+                    GLuint type) const {
+  GLCall(glEnable(GL_CULL_FACE));
+  shader.Bind();
+  object.VA.Bind();
+  object.IB->Bind();
+  glDrawElements(GL_TRIANGLES, object.IB->GetCount(), GL_UNSIGNED_INT, nullptr);
+}
+
+void Renderer::Draw(const PlyPointCloud &object, const Shader &shader) const {
+  GLCall(glEnable(GL_CULL_FACE));
+  shader.Bind();
+  object.VA.Bind();
+  glDrawArrays(GL_POINTS, 0, object.VB->getCount());
+}
+
 void Renderer::DrawFullscreenImage(FullImageBuffer &src, Shader &shader,
                                    unsigned char *image) {
   src.draw(image);

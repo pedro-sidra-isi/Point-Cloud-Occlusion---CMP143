@@ -15,24 +15,22 @@
 #include <stdio.h>
 #include <vector>
 
-class PlyObject {
-public:
-  PlyObject(char const *FileName);
-  ~PlyObject();
+typedef struct {
+  float coordinate[4];
+} PCloudPoint;
 
-  GLuint numTriangles();
-  GLuint numVertices();
+class PlyPointCloud {
+public:
+  PlyPointCloud(char const *FileName);
+  ~PlyPointCloud();
+
+  GLuint numPoints();
 
   VertexArray VA;
   std::shared_ptr<VertexBuffer> VB;
-  std::shared_ptr<IndexBuffer> IB;
   VertexBufferLayout layout;
-  std::vector<Vertex> vertex_data;
-  std::vector<Material> materials;
-  std::vector<VertexIndex> index_data;
+  std::vector<PCloudPoint> point_data;
 
 private:
-  GLuint NumTris;
-
   void Load(char const *FileName);
 };

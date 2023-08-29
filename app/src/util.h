@@ -24,7 +24,13 @@
 #define WINDOW_HEIGHT 600
 #define ASPECT_RATIO float(WINDOW_WIDTH) / float(WINDOW_HEIGHT)
 
-enum LightingType { GOURAUD_AD = 0, GOURAUD_ADS, PHONG, NUM_SHADERS };
+enum LightingType {
+  GOURAUD_AD = 0,
+  GOURAUD_ADS,
+  PHONG,
+  RESOLUTION,
+  NUM_SHADERS
+};
 enum RenderType {
   POINTS = GL_POINTS,
   WIREFRAME = GL_LINES,
@@ -41,7 +47,7 @@ typedef struct controls_ {
   glm::vec3 object_colors = {1, 0, 0};
 
   glm::vec3 light_color = {1, 1, 1};
-  glm::vec3 light_translation = {2.0, 2.0, 2.0};
+  glm::vec3 light_translation = {2.0, 2.0, 200.0};
 
   GLfloat fovy = glm::radians(45.0f);
   bool look_at_object = false;
@@ -50,7 +56,7 @@ typedef struct controls_ {
   GLfloat near_clip = 0.1f;
   GLfloat far_clip = 2000.0f;
   GLfloat aspect_ratio = ASPECT_RATIO;
-  LightingType chosen_shader = GOURAUD_ADS;
+  LightingType chosen_shader = RESOLUTION;
   RenderType chosen_render = SOLID;
 
   bool close2gl_raster = true;
@@ -82,6 +88,12 @@ typedef struct {
   float normal[3];
   uint material_index;
 } Vertex;
+
+typedef struct {
+  uint i;
+  uint j;
+  uint k;
+} VertexIndex;
 
 typedef struct {
   glm::vec3 position;

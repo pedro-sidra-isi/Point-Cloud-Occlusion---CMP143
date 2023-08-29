@@ -46,6 +46,7 @@ set(SOURCES
     src/VertexBuffer.cpp
     src/Object.cpp
     src/PlyObject.cpp
+    src/PlyPointCloud.cpp
     src/close2gl.cpp
     src/opengl_reference.cpp
     src/close2gl_math.cpp
