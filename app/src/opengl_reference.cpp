@@ -150,9 +150,10 @@ void opengl(Controls *controls) {
       use_shader = &shaderResolution;
       use_shader->Bind();
       use_shader->SetUniform3f(
-          "max_value",
-          glm::value_ptr(glm::vec3(
-              (float)neoGiselle.max_vertex_values.properties[0], 0.0, 0.0)));
+          "max_value", glm::value_ptr(glm::vec3(
+                           (float)neoGiselle.max_vertex_values.properties[0],
+                           (float)neoGiselle.max_vertex_values.properties[1],
+                           (float)neoGiselle.max_vertex_values.properties[2])));
       break;
     case RESOLUTION_THRESHOLD:
       use_shader = &shaderResolutionThresh;
@@ -268,7 +269,7 @@ void updateGUI(Controls &controls) {
 
   ImGui::Text("Point Occlusion");
   ImGui::SliderFloat("Points per Triangle Threshold",
-                     &controls.resolution_threshold, 0, 500);
+                     &controls.resolution_threshold, 0, 50000);
   ImGui::Text("Occlusion index = %f", controls.occlusion_index);
 
   ImGui::Text("Camera Controls");

@@ -33,5 +33,5 @@
 
 # folders
 bin/
-cmake_build_Debug/
+cmake_build_*/
 build/

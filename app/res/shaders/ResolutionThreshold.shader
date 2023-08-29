@@ -58,7 +58,7 @@ void main()
     vec3 c1 = vec3(0.99,  0.91, 0.15);
 
     vec3 c;
-    if (vResProperties.x > points_per_area_threshold.x)
+    if (vResProperties.z > points_per_area_threshold.x)
     {
         c = c0 + 0.5*(c1-c0);
     }

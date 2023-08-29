@@ -61,7 +61,7 @@ void determineOcclusion(PlyObject &reference, PlyPointCloud &pointCloud) {
     reference.vertex_data[i + 0].properties[0] = points_inside_triangle;
     reference.vertex_data[i + 0].properties[1] = surface_area;
     reference.vertex_data[i + 0].properties[2] =
-        (float)points_inside_triangle / surface_area;
+        (float)points_inside_triangle / (1e-4 + surface_area);
     // std::cout << (float)points_inside_triangle / surface_area << std::endl;
 
     reference.max_vertex_values.properties[0] = glm::max(
@@ -69,8 +69,14 @@ void determineOcclusion(PlyObject &reference, PlyPointCloud &pointCloud) {
     reference.max_vertex_values.properties[1] =
         glm::max(surface_area, reference.max_vertex_values.properties[1]);
     reference.max_vertex_values.properties[2] =
-        glm::max((float)points_inside_triangle / surface_area,
+        glm::max(reference.vertex_data[i + 0].properties[2],
                  reference.max_vertex_values.properties[2]);
+
+    if (reference.max_vertex_values.properties[2] ==
+        reference.vertex_data[i + 0].properties[2]) {
+      std::cout << reference.max_vertex_values.properties[2] << std::endl;
+      std::cout << points_inside_triangle << "," << surface_area << std::endl;
+    }
 
     // dumb
     reference.vertex_data[i + 1].properties[0] =
@@ -104,7 +110,7 @@ float getOcclusionIndex(PlyObject &reference, float points_per_area_threshold) {
     surface_area = reference.vertex_data[i].properties[1];
     resolution = reference.vertex_data[i].properties[2];
 
-    if (points_inside_triangle > points_per_area_threshold) {
+    if (resolution > points_per_area_threshold) {
       covered_area += surface_area;
     }
     total_surface_area += surface_area;

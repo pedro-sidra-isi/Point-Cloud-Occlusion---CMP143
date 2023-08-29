@@ -56,7 +56,8 @@ void main()
     vec3 c0 = vec3(0.26,  0.0, 0.33);
     vec3 c1 = vec3(0.99,  0.91, 0.15);
 
-    vec3 c = c0 + (c1-c0)*(vResProperties.x/max_value.x);
+    //vec3 c = c0 + (c1-c0)*(log(vResProperties.z)/log(max_value.z));
+    vec3 c = c0 + (c1-c0)*(vResProperties.z/max_value.z);
     //vec3 c = vec3(vResolution, vResolution, vResolution);
     face_color = max(dot(normal, normalize(light_transformed.position - v_pos)), 0.0) * c * light_transformed.color * light_transformed.strength;
 }
