@@ -29,6 +29,7 @@ enum LightingType {
   GOURAUD_ADS,
   PHONG,
   RESOLUTION,
+  RESOLUTION_THRESHOLD,
   NUM_SHADERS
 };
 enum RenderType {
@@ -41,6 +42,8 @@ enum RenderType {
 // UI - controled parameters
 typedef struct controls_ {
 
+  float resolution_threshold = 0;
+  float occlusion_index = 0;
   glm::vec3 camera_translation = {0, 0, 0};
   glm::vec3 camera_rotation = {0, 0, 0};
   glm::vec3 object_gradual_rotation = {0, 0, 0};
@@ -56,7 +59,7 @@ typedef struct controls_ {
   GLfloat near_clip = 0.1f;
   GLfloat far_clip = 2000.0f;
   GLfloat aspect_ratio = ASPECT_RATIO;
-  LightingType chosen_shader = RESOLUTION;
+  LightingType chosen_shader = PHONG;
   RenderType chosen_render = SOLID;
 
   bool close2gl_raster = true;
@@ -90,6 +93,15 @@ typedef struct {
 } Vertex;
 
 typedef struct {
+  float coordinate[4];
+  float normal[3];
+  float properties[3];
+  // point_count;
+  // float surface_area;
+  // float resolution;
+} VertexWithResolution;
+
+typedef struct {
   uint i;
   uint j;
   uint k;
@@ -110,3 +122,4 @@ static const GLchar *ReadShader(const char *filename);
 GLuint LoadShaders(ShaderInfo *shaders);
 
 BoundingBox calculate_bbox(Vertex *vertices, GLuint NumVertices);
+BoundingBox calculate_bbox(VertexWithResolution *vertices, GLuint NumVertices);

@@ -8,6 +8,7 @@ layout( location = 1 ) in vec3 vNormal;
 layout( location = 2 ) in vec3 vResProperties;
 
 uniform vec3 max_value;
+uniform vec3 points_per_area_threshold;
 
 // typedef struct {
 //0  float coordinate[4];
@@ -56,7 +57,14 @@ void main()
     vec3 c0 = vec3(0.26,  0.0, 0.33);
     vec3 c1 = vec3(0.99,  0.91, 0.15);
 
-    vec3 c = c0 + (c1-c0)*(vResProperties.x/max_value.x);
+    vec3 c;
+    if (vResProperties.x > points_per_area_threshold.x)
+    {
+        c = c0 + 0.5*(c1-c0);
+    }
+    else{
+        c = c0;
+    }
     //vec3 c = vec3(vResolution, vResolution, vResolution);
     face_color = max(dot(normal, normalize(light_transformed.position - v_pos)), 0.0) * c * light_transformed.color * light_transformed.strength;
 }

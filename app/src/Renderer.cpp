@@ -30,8 +30,7 @@ void Renderer::Draw(const PlyObject &object, const Shader &shader,
   GLCall(glEnable(GL_CULL_FACE));
   shader.Bind();
   object.VA.Bind();
-  object.IB->Bind();
-  glDrawElements(GL_TRIANGLES, object.IB->GetCount(), GL_UNSIGNED_INT, nullptr);
+  glDrawArrays(type, 0, object.VB->getCount());
 }
 
 void Renderer::Draw(const PlyPointCloud &object, const Shader &shader) const {

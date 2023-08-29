@@ -1,4 +1,5 @@
 #include "PlyObject.h"
+#include "Occlusion.h"
 #include "VertexArray.h"
 #include "VertexBuffer.h"
 #include "VertexBufferLayout.h"
@@ -9,11 +10,11 @@
 
 PlyObject::~PlyObject() {}
 
-PlyObject::PlyObject(char const *FileName) : VA(), layout() {
-  this->Load(FileName);
+PlyObject::PlyObject(char const *FileName, PlyPointCloud &p) : VA(), layout() {
+  this->Load(FileName, p);
 }
 
-void PlyObject::Load(char const *FileName) {
+void PlyObject::Load(char const *FileName, PlyPointCloud &ptCloud) {
   happly::PLYData plyIn(FileName);
   // Construct the data object by reading from file
   std::vector<std::array<double, 3>> vPos = plyIn.getVertexPositions();
@@ -25,32 +26,24 @@ void PlyObject::Load(char const *FileName) {
       plyIn.getElement("vertex").getProperty<double>("nz");
   auto triangleIndexes = plyIn.getFaceIndices<unsigned int>();
 
-  // Load vertex data
-  for (int i = 0; i < vPos.size(); i++) {
-    Vertex v;
-
-    v.coordinate[0] = vPos[i][0];
-    v.coordinate[1] = vPos[i][1];
-    v.coordinate[2] = vPos[i][2];
-    v.coordinate[3] = 1.0;
-
-    v.normal[0] = xNormal[i];
-    v.normal[1] = yNormal[i];
-    v.normal[2] = zNormal[i];
-
-    v.material_index = 0;
-    vertex_data.push_back(v);
-  }
-
   // Load index data
   for (auto index : triangleIndexes) {
-    VertexIndex v;
+    for (int i = 0; i < 3; i++) {
+      VertexWithResolution v;
+      v.coordinate[0] = vPos[index[i]][0];
+      v.coordinate[1] = vPos[index[i]][1];
+      v.coordinate[2] = vPos[index[i]][2];
+      v.coordinate[3] = 1.0;
 
-    v.i = index[0];
-    v.j = index[1];
-    v.k = index[2];
-    index_data.push_back(v);
+      v.normal[0] = xNormal[index[i]];
+      v.normal[1] = yNormal[index[i]];
+      v.normal[2] = zNormal[index[i]];
+
+      vertex_data.push_back(v);
+    }
   }
+
+  determineOcclusion(*this, ptCloud);
 
   // Load material data
   Material m;
@@ -61,20 +54,18 @@ void PlyObject::Load(char const *FileName) {
   materials.push_back(m);
 
   // setup VB, VA & IB
-  VB = std::make_shared<VertexBuffer>((GLfloat *)vertex_data.data(),
-                                      vertex_data.size() * sizeof(Vertex),
-                                      vertex_data.size());
-  IB = std::make_shared<IndexBuffer>((unsigned int *)index_data.data(),
-                                     3 * index_data.size());
+  VB = std::make_shared<VertexBuffer>(
+      (GLfloat *)vertex_data.data(),
+      vertex_data.size() * sizeof(VertexWithResolution), vertex_data.size());
 
-  layout.AddFloat(4);       // coordinates
-  layout.AddFloat(3);       // normals
-  layout.AddUnsignedInt(1); // Material index
+  layout.AddFloat(4); // coordinates
+  layout.AddFloat(3); // normals
+  layout.AddFloat(3); // point count
+  // layout.AddFloat(1); // surface area
+  // layout.AddFloat(1); // res
   VA.AddBuffer(*VB, layout);
-
-  std::cout << "COW HAS" << numTriangles() << std::endl;
 }
 
-GLuint PlyObject::numTriangles() { return index_data.size(); }
+GLuint PlyObject::numTriangles() { return vertex_data.size() / 3; }
 
 GLuint PlyObject::numVertices() { return vertex_data.size(); }

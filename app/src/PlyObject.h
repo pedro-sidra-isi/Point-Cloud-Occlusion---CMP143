@@ -1,6 +1,7 @@
 #pragma once
 
 #include "IndexBuffer.h"
+#include "PlyPointCloud.h"
 #include "VertexArray.h"
 #include "VertexBufferLayout.h"
 #include "happly.h"
@@ -17,22 +18,30 @@
 
 class PlyObject {
 public:
-  PlyObject(char const *FileName);
+  PlyObject(char const *FileName, PlyPointCloud &p);
   ~PlyObject();
 
   GLuint numTriangles();
   GLuint numVertices();
+  void update();
 
   VertexArray VA;
   std::shared_ptr<VertexBuffer> VB;
-  std::shared_ptr<IndexBuffer> IB;
   VertexBufferLayout layout;
-  std::vector<Vertex> vertex_data;
+  std::vector<VertexWithResolution> vertex_data;
   std::vector<Material> materials;
-  std::vector<VertexIndex> index_data;
+
+  // typedef struct {
+  //   float coordinate[4];
+  //   float normal[3];
+  //   uint material_index;
+  //   uint point_count;
+  //   float surface_area;
+  //   float resolution;
+  VertexWithResolution max_vertex_values;
 
 private:
   GLuint NumTris;
 
-  void Load(char const *FileName);
+  void Load(char const *FileName, PlyPointCloud &p);
 };

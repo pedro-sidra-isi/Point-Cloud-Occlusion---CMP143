@@ -1,4 +1,5 @@
 #include "opengl_reference.h"
+#include "Occlusion.h"
 #include "glm/gtx/string_cast.hpp"
 #include <chrono>
 #include <unistd.h>
@@ -26,8 +27,10 @@ void opengl(Controls *controls) {
 
   // Load our giselle
   // Object giselle("../bin/giselle.in");
-  PlyObject neoGiselle("../bin/cow.ply");
   PlyPointCloud neoGisPointCloud("../bin/cow_pcloud.ply");
+  PlyObject neoGiselle("../bin/cow.ply", neoGisPointCloud);
+
+  determineOcclusion(neoGiselle, neoGisPointCloud);
   // OpenGL Giselle is red
   // giselle.materials[0].diffuse = glm::vec3(1.0, 0, 0);
   // For resetting material later
@@ -67,6 +70,7 @@ void opengl(Controls *controls) {
   Shader shaderGouraud("../res/shaders/Gouraud.shader");
   Shader shaderPhong("../res/shaders/Phong.shader");
   Shader shaderResolution("../res/shaders/Resolution.shader");
+  Shader shaderResolutionThresh("../res/shaders/ResolutionThreshold.shader");
   Shader shaderPointCloud("../res/shaders/PointCloud.shader");
   Shader *use_shader = &shaderGouraud;
 
@@ -83,6 +87,9 @@ void opengl(Controls *controls) {
 
     // Update ImGui only on main OpenGL thread (not Close2GL)
     updateGUI(*controls);
+
+    controls->occlusion_index =
+        getOcclusionIndex(neoGiselle, controls->resolution_threshold);
 
     // ====== Update ModelViewProj  ======
     // Rebuild projection with user params
@@ -141,14 +148,32 @@ void opengl(Controls *controls) {
       break;
     case RESOLUTION:
       use_shader = &shaderResolution;
+      use_shader->Bind();
+      use_shader->SetUniform3f(
+          "max_value",
+          glm::value_ptr(glm::vec3(
+              (float)neoGiselle.max_vertex_values.properties[0], 0.0, 0.0)));
+      break;
+    case RESOLUTION_THRESHOLD:
+      use_shader = &shaderResolutionThresh;
+      use_shader->Bind();
+      use_shader->SetUniform3f(
+          "points_per_area_threshold",
+          glm::value_ptr(
+              glm::vec3((float)controls->resolution_threshold, 0.0, 0.0)));
+      break;
     }
 
     // ====== Set Uniforms  ======
+    // for (auto v : neoGiselle.vertex_data) {
+    //   std::cout << v.point_count << ",";
+    // }
+    // std::cout << std::endl;
     setUniforms_PhongGouraud(use_shader, Model, View, Projection, light_0);
+    renderer.Draw(neoGiselle, *use_shader, controls->chosen_render);
 
     // ====== Render and swap buffers  ======
     // renderer.Draw(giselle, *use_shader, controls->chosen_render);
-    renderer.Draw(neoGiselle, *use_shader, controls->chosen_render);
 
     shaderPointCloud.Bind();
     shaderPointCloud.SetUniform3f("color",
@@ -241,6 +266,12 @@ void setUniforms_PhongGouraud(Shader *use_shader, glm::mat4 Model,
 //
 void updateGUI(Controls &controls) {
 
+  ImGui::Text("Point Occlusion");
+  ImGui::SliderFloat("Points per Triangle Threshold",
+                     &controls.resolution_threshold, 0, 500);
+  ImGui::Text("Occlusion index = %f", controls.occlusion_index);
+
+  ImGui::Text("Camera Controls");
   // object
   ImGui::SliderFloat3("Translation",
                       glm::value_ptr(controls.camera_translation), -700.0f,
@@ -287,25 +318,18 @@ void updateGUI(Controls &controls) {
   }
 
   ImGui::Text("Shader Type");
-  ImGui::RadioButton("Gouraud AD", (int *)&controls.chosen_shader, GOURAUD_AD);
-  ImGui::RadioButton("Gouraud ADS", (int *)&controls.chosen_shader,
-                     GOURAUD_ADS);
-  ImGui::SameLine();
-  ImGui::RadioButton("Phong Shading", (int *)&controls.chosen_shader, PHONG);
-  ImGui::SameLine();
-  ImGui::RadioButton("Resolution Shading", (int *)&controls.chosen_shader,
-                     RESOLUTION);
-
-  ImGui::Checkbox("Close2GL Rasterization", &controls.close2gl_raster);
+  ImGui::RadioButton("Phong", (int *)&controls.chosen_shader, PHONG);
+  ImGui::RadioButton("Resolution", (int *)&controls.chosen_shader, RESOLUTION);
+  ImGui::RadioButton("'Represented' Triangles", (int *)&controls.chosen_shader,
+                     RESOLUTION_THRESHOLD);
 
   ImGui::SliderFloat("Near Clip", &controls.near_clip, 0.0f, 5.0f);
   ImGui::SliderFloat("Far Clip", &controls.far_clip, 5.0f, 5000.0f);
 
-  ImGui::Text("OPENGL FPS: %.3f ms/frame (%.1f FPS)",
-              controls.frame_time_opengl, 1000.0 / controls.frame_time_opengl);
-  ImGui::Text("CLOSE2GL FPS %.3f ms/frame (%.1f FPS)",
-              controls.frame_time_close2gl,
+  ImGui::Text("FPS: %.3f ms/frame (%.1f FPS)", controls.frame_time_opengl,
               1000.0 / controls.frame_time_opengl);
+
+  controls.resolution_threshold = glm::round(controls.resolution_threshold);
 }
 
 void setupGUI(GLFWwindow *window) {

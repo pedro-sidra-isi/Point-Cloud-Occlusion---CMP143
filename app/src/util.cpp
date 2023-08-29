@@ -112,3 +112,19 @@ BoundingBox calculate_bbox(Vertex *vertices, GLuint NumVertices) {
 
   return bbox;
 }
+BoundingBox calculate_bbox(VertexWithResolution *vertices, GLuint NumVertices) {
+
+  BoundingBox bbox;
+
+  for (int i = 0; i < NumVertices; i++) {
+    glm::vec3 v;
+    v.x = vertices[i].coordinate[0];
+    v.y = vertices[i].coordinate[1];
+    v.z = vertices[i].coordinate[2];
+
+    bbox.max = glm::max(v, bbox.max);
+    bbox.min = glm::min(v, bbox.min);
+  }
+
+  return bbox;
+}

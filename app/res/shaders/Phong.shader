@@ -35,8 +35,8 @@ void main()
     normal = normalize( transpose(inverse(mat3(view * model))) * vec3(vNormal) );
 
     gl_Position =  projection * v_pos4;
-    light_transformed = light;
-    light_transformed.position  = vec3(view*vec4(light.position,1.0));
+        light_transformed = light;
+        light_transformed.position  = vec3(vec4(light.position,1.0));
 }
 
 // Fragment shader doesn't do much since Gourad shading
